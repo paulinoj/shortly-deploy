@@ -109,9 +109,9 @@ module.exports = function(grunt) {
     }
   });
 
-  // grunt.registerTask('deploy', ['concat'
-  //   // add your deploy tasks here
-  // ]);
+  grunt.registerTask('deploy', [
+    // add your deploy tasks here
+  ]);
 
   // grunt.registerTask('default', ['deploy'
   //   // add your deploy tasks here
