@@ -25,7 +25,7 @@ module.exports = function(grunt) {
     },
 
     uglify: {
-      my_target: {
+      dist: {
         files: {
           'public/dist/built-min.js' : [ 'public/dist/built.js']
         }
@@ -114,7 +114,7 @@ module.exports = function(grunt) {
     }
   });
 
-  grunt.registerTask('deploy', ['concat'
+  grunt.registerTask('deploy', ['concat', 'uglify'
     // add your deploy tasks here
   ]);
 
